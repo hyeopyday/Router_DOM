@@ -7,7 +7,7 @@
   - React는 기본적으로 싱글 페이지 앱(SPA)이기 때문에 URL이 바뀌어도 실제로는 한 페이지임 -> React Router DOM은 이 URL 변화에 따라 다른 컴포넌트를 보여주게 해줌
  
 * 3. 설치방법
-  ```
+  ```jsx
    npm install react-router-dom
   ```
 
@@ -15,9 +15,9 @@
 ```jsx
   // App.jsx (혹은 App.js)
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
+  BrowserRouter as Router, // 라우팅을 설정하고 URL을 관리하는 최상위 컴포넌트
+  Routes, //  여러 Route를 포함하여 경로에 따라 렌더링할 컴포넌트를 결정
+  Route, // 특정 경로에 대한 컴포넌트를 정의하는 컴포넌트
   Link
 } from "react-router-dom";
 
@@ -42,3 +42,5 @@ function App() {
 
 export default App;
 ```
+
+* 5. 
